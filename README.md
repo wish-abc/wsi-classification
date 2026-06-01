@@ -14,3 +14,11 @@ To alleviate the problem that existing attention aggregators focus on only a few
 - **Camelyon16**: A public benchmark dataset of 397 breast cancer lymph node WSIs for tumor metastasis detection (normal: 157 train + test, tumor: 111 train + test).
 
 ## Experimental Steps
+
+## Acknowledgments
+
+This work builds upon and extends several open-source projects. We gratefully acknowledge the following:
+
+- **[ACMIL](https://github.com/dazhangyu123/ACMIL)**
+
+
