@@ -14,6 +14,9 @@ To alleviate the problem that existing attention aggregators focus on only a few
 - **Camelyon16**: A public benchmark dataset of 397 breast cancer lymph node WSIs for tumor metastasis detection (normal: 157 train + test, tumor: 111 train + test).
 
 ## Experimental Steps
+### step1
+```bash
+python extract_features_fp.py --data_h5_dir DIR_TO_COORDS
 
 ## Acknowledgments
 
