@@ -10,3 +10,7 @@ To address the insufficient recognition of key lesion regions at each level in e
 To alleviate the problem that existing attention aggregators focus on only a few salient features, we propose a classification method with multi-stage key feature mining. This method introduces a multi-stage instance aggregation process, uses a masking mechanism to occlude the identified key features, guides the model to mine different key features in the next stage, and thus learns the representations of different pathological patterns. Finally, the multi-stage pathological pattern representations are aggregated through the attention mechanism for final classification.
 
 ## Datasets
+- **ISDI**: An internal inflammatory skin disease dataset from Beijing Hospital containing 1,091 WSIs across three categories (spongiosis: 362, lichen planus: 357, psoriasis: 437).
+- **Camelyon16**: A public benchmark dataset of 397 breast cancer lymph node WSIs for tumor metastasis detection (normal: 157 train + test, tumor: 111 train + test).
+
+## Experimental Steps
