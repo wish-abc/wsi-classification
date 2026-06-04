@@ -26,13 +26,13 @@ CUDA_VISIBLE_DEVICES=0,1 python extract_features_fp.py --data_h5_dir DIR_TO_COOR
 
 ```
 ### step2 get cluster labels for features
-script get_cluster_n.py for dataset ISDI and get_cluster_cm16.py for dataet Camelyon16.
+run script get_cluster_n.py for dataset ISDI and run script get_cluster_cm16.py for dataet Camelyon16.
 ```bash
 python get_cluster_n.py
 ```
 
 ### step3 train && test
-script main_ISDI.py for dataset ISDI and main_cm16.py for dataet Camelyon16.
+After obtaining features and feature clustering labels, run script main_ISDI.py for dataset ISDI and main_cm16.py for dataset Camelyon16.
 ```bash
 python main_ISDI.py
 ```
