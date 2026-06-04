@@ -55,7 +55,7 @@ python Step3_WSI_classification_MSMAMIL.py
 ```
 
 ## Results && checkpoints
-We provide the weights of the above two models, and the experimental results and reproduction results are shown as follows.
+We provide the weights of the above two models in the weights directory, and the experimental results and reproduction results are shown as follows.
 
 ## Acknowledgments
 
