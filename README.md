@@ -45,7 +45,7 @@ We create patches and extract features at level 1 for both two dataset.
 python Step1_create_patches_fp.py
 ```
 ### step2 extract features for patches
-Features for dataset Camelyon16 could be available from method **[ACMIL(https://github.com/dazhangyu123/ACMIL)**.
+Features for dataset Camelyon16 could be available from method **[ACMIL(https://github.com/dazhangyu123/ACMIL)**
 ```bash
 python Step2_feature_extract.py
 ```
