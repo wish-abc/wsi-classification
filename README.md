@@ -12,7 +12,7 @@ To alleviate the problem that existing attention aggregators focus on only a few
 ## Datasets
 - **ISDI**: An internal inflammatory skin disease dataset from Beijing Hospital containing 1,091 WSIs across three categories (spongiosis: 362, lichen planus: 357, psoriasis: 437).
 - **Camelyon16**: A public benchmark dataset of 397 breast cancer lymph node WSIs for tumor metastasis detection (normal: 157 train + test, tumor: 111 train + test). Dataset could be available from **[site](
-https://camelyon16.grand-challenge.org/)**.
+https://camelyon16.grand-challenge.org)**.
 
 ## Experimental Steps
 ### steps for MFFMIL
