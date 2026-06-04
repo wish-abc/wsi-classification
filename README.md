@@ -14,6 +14,28 @@ To alleviate the problem that existing attention aggregators focus on only a few
 - **Camelyon16**: A public benchmark dataset of 397 breast cancer lymph node WSIs for tumor metastasis detection (normal: 157 train + test, tumor: 111 train + test).
 
 ## Experimental Steps
+### steps for MFFMIL
+### step1 create patches && extract features
+refer to **[CLAM](https://github.com/mahmoodlab/CLAM)** to run scripts
+```bash
+python create_patches_fp.py --source DATA_DIRECTORY --save_dir RESULTS_DIRECTORY --patch_size 256 --seg --patch --stitch --patch_level 1
+```
+```bash
+CUDA_VISIBLE_DEVICES=0,1 python extract_features_fp.py --data_h5_dir DIR_TO_COORDS --data_slide_dir DATA_DIRECTORY --csv_path CSV_FILE_NAME --feat_dir FEATURES_DIRECTORY --batch_size 512 --slide_ext .svs
+
+```
+### step2 get cluster labels for features
+```bash
+python get_cluster_n.py
+```
+
+### step3 train && test
+```bash
+python main_ISDI.py
+```
+
+
+### steps for MSMMIL
 ### step1 create patches for each wsi
 ```bash
 python Step1_create_patches_fp.py
