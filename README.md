@@ -54,6 +54,9 @@ python Step2_feature_extract.py
 python Step3_WSI_classification_MSMAMIL.py
 ```
 
+## Results && checkpoints
+We provide the weights of the above two models, and the experimental results and reproduction results are shown as follows.
+
 ## Acknowledgments
 
 This work builds upon and extends several open-source projects. We gratefully acknowledge the following:
