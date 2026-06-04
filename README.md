@@ -11,25 +11,28 @@ To alleviate the problem that existing attention aggregators focus on only a few
 
 ## Datasets
 - **ISDI**: An internal inflammatory skin disease dataset from Beijing Hospital containing 1,091 WSIs across three categories (spongiosis: 362, lichen planus: 357, psoriasis: 437).
-- **Camelyon16**: A public benchmark dataset of 397 breast cancer lymph node WSIs for tumor metastasis detection (normal: 157 train + test, tumor: 111 train + test).
+- **Camelyon16**: A public benchmark dataset of 397 breast cancer lymph node WSIs for tumor metastasis detection (normal: 157 train + test, tumor: 111 train + test). Dataset could be available from **[site](
+https://camelyon16.grand-challenge.org/)**.
 
 ## Experimental Steps
 ### steps for MFFMIL
 ### step1 create patches && extract features
-refer to **[CLAM](https://github.com/mahmoodlab/CLAM)** to run scripts
+refer to **[CLAM](https://github.com/mahmoodlab/CLAM)** to run the follow scripts. For ISDI dataset, we use multi-scale features at level 1,2,3. For Camelyon16 dataset, we use single-scale features at level 1.
 ```bash
 python create_patches_fp.py --source DATA_DIRECTORY --save_dir RESULTS_DIRECTORY --patch_size 256 --seg --patch --stitch --patch_level 1
 ```
 ```bash
-CUDA_VISIBLE_DEVICES=0,1 python extract_features_fp.py --data_h5_dir DIR_TO_COORDS --data_slide_dir DATA_DIRECTORY --csv_path CSV_FILE_NAME --feat_dir FEATURES_DIRECTORY --batch_size 512 --slide_ext .svs
+CUDA_VISIBLE_DEVICES=0,1 python extract_features_fp.py --data_h5_dir DIR_TO_COORDS --data_slide_dir DATA_DIRECTORY --csv_path CSV_FILE_NAME --feat_dir FEATURES_DIRECTORY --batch_size 512 --slide_ext .mrxs
 
 ```
 ### step2 get cluster labels for features
+script get_cluster_n.py for dataset ISDI and get_cluster_cm16.py for dataet Camelyon16.
 ```bash
 python get_cluster_n.py
 ```
 
 ### step3 train && test
+script main_ISDI.py for dataset ISDI and main_cm16.py for dataet Camelyon16.
 ```bash
 python main_ISDI.py
 ```
