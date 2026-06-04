@@ -61,6 +61,7 @@ We provide the weights of the above two models in the weights directory, and the
 
 This work builds upon and extends several open-source projects. We gratefully acknowledge the following:
 
+- **[CLAM](https://github.com/mahmoodlab/CLAM)**
 - **[ACMIL](https://github.com/dazhangyu123/ACMIL)**
 - **[HAGMIL](https://github.com/BearCleverProud/HAG-MIL)**
 
