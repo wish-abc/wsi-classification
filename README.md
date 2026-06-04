@@ -1,5 +1,5 @@
 # Key Feature Fusion for Pathological Image Multi-Instance Learning Classification
-This repository contains the implementation of two multi-instance learning (MIL) methods for pathological image classification, which are the core contributions of the master's thesis "Research on Multi-Instance Learning Classification Method of Pathological Images Based on Key Feature Fusion" (University of Chinese Academy of Sciences, 2026). The code is currently being prepared for release.
+This repository contains the implementation of two multi-instance learning (MIL) methods for pathological image classification, which are the core contributions of the master's thesis "Research on Multi-Instance Learning Classification Method of Pathological Images Based on Key Feature Fusion" (University of Chinese Academy of Sciences, 2026).
 
 ## Method 1: Multi-Scale Key Feature Fusion (MFF-MIL)
 
