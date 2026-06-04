@@ -39,7 +39,7 @@ python main_ISDI.py
 
 
 ### steps for MSMMIL
-We create patches and extract features at level 1 for both two dataset.
+We create patches and extract features at level 1 for both two datasets.
 ### step1 create patches for each wsi
 ```bash
 python Step1_create_patches_fp.py
