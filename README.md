@@ -56,6 +56,19 @@ python Step3_WSI_classification_MSMAMIL.py
 
 ## Results && checkpoints
 We provide the weights of the above two models in the weights directory, and the experimental results and reproduction results are shown as follows.
+### MFF-MIL (ResNet-50 backbone)
+
+| Dataset | Task | Paper Accuracy | Reproduced Accuracy |
+|:--------|:-----|:---------------|:------------------|
+| ISDI | 3-class inflammatory skin disease classification | **0.778** | **0.772** |
+| Camelyon16 | Binary tumor metastasis classification | **0.886** | **0.885** |
+
+### MSM-MIL (ViT-S/16 backbone)
+
+| Dataset | Task | Paper Accuracy | Reproduced Accuracy |
+|:--------|:-----|:---------------|:------------------|
+| ISDI | 3-class inflammatory skin disease classification | **0.821** | **0.819** |
+| Camelyon16 | Binary tumor metastasis classification | **0.958** | **0.956** |
 
 ## Acknowledgments
 
